@@ -1,0 +1,1 @@
+This is Kang Zihao's personal website. The theme is hugo-paged(https://github.com/yihui/hugo-paged)

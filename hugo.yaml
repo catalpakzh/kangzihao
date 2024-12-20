@@ -1,0 +1,82 @@
+baseurl: "/"
+languageCode: "en-US"
+title: "A Hugo theme inspired by paged.js"
+theme: "hugo-paged"
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+footnotereturnlinkcontents: "↩"
+enableEmoji: true
+hasCJKLanguage: true
+
+outputs:
+  home: [html, rss, json]
+
+menu:
+  main:
+    - name: "HOME"
+      url: "/"
+      weight: 1
+    - name: "ABOUT"
+      url: "/en/about/"
+      weight: 2
+    - name: "BLOG"
+      url: "/en/"
+      weight: 3
+    - name: "关于"
+      url: "/cn/about/"
+      weight: 4
+    - name: "日志"
+      url: "/cn/"
+      weight: 5      
+  en:
+    - name: "HOME"
+      url: "/"
+      weight: 1
+    - name: "ABOUT"
+      url: "/en/about/"
+      weight: 2
+    - name: "BLOG"
+      url: "/en/"
+      weight: 3
+    - name: "VITAE"
+      url: "/en/vitae/"
+      weight: 4
+    - name: "中文"
+      url: "/cn/"
+      weight: 5
+    - name: "🔍"
+      url: "/search/"
+      weight: 6
+  cn:
+    - name: "首页"
+      url: "/"
+      weight: 1
+    - name: "关于"
+      url: "/cn/about/"
+      weight: 2
+    - name: "日志"
+      url: "/cn/"
+      weight: 3
+    - name: "简历"
+      url: "/cn/vitae/"
+      weight: 4
+    - name: "EN"
+      url: "/en/"
+      weight: 5
+    - name: "🔍"
+      url: "/search/"
+      weight: 6      
+
+params:
+  description: "Kang Zihao's planet"
+  logo:
+    en:
+      alt: Kang Zihao
+      img: # a path to the logo
+  footer: "&copy; [Kang Zihao](https://kangzihao.netlify.app/) 2024-{Year} | [Github](https://github.com/catalpakzh) | [Subscribe](/index.xml)"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true

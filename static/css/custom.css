@@ -1,0 +1,123 @@
+h1.title::before { content: "❆"; }
+
+
+:root {
+  --body-width: 992px;
+  --text-width: 620px;
+  --bg-body: white;
+  --bg-block: #f9f9f9;
+  --border-color: #E6E6FA;
+  --box-shadow: 5px 5px 5px #eee;
+}
+
+
+.menu .active {
+  border-bottom: 4px solid #18bfef;
+  margin-bottom: -5px;
+}
+.menu {
+  font-size: 18px;
+}
+
+
+blockquote, .toc-list, .toc-list ul {
+  border-left: 2px solid var(--border-color);
+  padding-left: 1em;
+}
+.single blockquote {
+  margin: 1em 0;
+  padding: 0 2em;
+  background: none;
+  border-left-width: 3px;
+  border-left: 3.5px solid lightblue;
+  color: #222;
+}
+.single blockquote:not(:hover) {
+  border-left-color: transparent;
+}
+
+
+.nav-top {
+  margin-bottom: 1em;
+  border-bottom: 1px solid;
+  margin-top: -1em;
+}
+
+.main > ul > li > span:first-child, .main > p > span:first-child, .main > p .subtitle, .hash-note, .post-nav {
+  font-size: .9em;
+}
+
+.stats {
+  text-align: right;
+  font-size: .9em;
+  color: gray;
+}
+
+.single .main h2 {
+  text-align: center;
+}
+.single .main h3 {
+  text-align: left;
+}
+
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  color: initial;
+}
+a:hover {
+  color: #18bfef;
+  text-decoration: none;
+  border-bottom: transparent;
+}
+
+dl, fieldset {
+  background-color: lightblue;
+  font-size: .9em;
+  border-width: 2px;
+}
+
+
+@media (min-width: 768px) {
+  .main > pre {
+    width: 100%;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  pre, table {
+    width: auto;
+    max-width: none;
+    margin-left: auto;
+  }
+}
+
+
+.bg-number, .note-ref:has(+ .side:hover) {
+    font-size: .9rem;
+    background: lightblue;
+    opacity: .8;
+    border-bottom: dashed 1px black;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+.side-right {
+  float: right;
+  clear: right;
+  background: none;
+  padding: 0 0 1em 0;
+  width: calc(var(--body-width) - var(--text-width) - 2.5rem * 2 - 2rem);
+  margin-right: calc(var(--text-width) + 2.5rem * 2 - var(--body-width));
+}
+blockquote .side-right {
+  margin-right: calc(var(--text-width) + 2.5rem * 2 - var(--body-width) - 2rem);
+}
+
+
+
+
+
+
+
+
